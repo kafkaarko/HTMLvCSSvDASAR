@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+        <p>Status ayah</p>
+        <input type="radio" id="hidup" value="hidup" name="he" onclick="clik(this)">
+        <label for="hidup">Masih hidup</label>
+        <input type="radio" id="mati" value="mati" name="he" onclick="clik(this)">
+        <label for="hidup">sudah meninggal</label>
+        <input type="radio" id="gk" value="gk" name="he" onclick="clik(this)">
+        <label for="hidup">tidak mengetahui</label>
+    </div>
+
+    <div id="teks" style="display: block;" >
+        <label for="">pendidikan ayah</label>
+        <input type="text">
+        <label for="">pendidikan ayah</label>
+        <input type="text">
+        <label for="">pendidikan ayah</label>
+        <input type="text">
+        <label for="">pendidikan ayah</label>
+        <input type="text">
+        <label for="" id="ubah">Detail ayah </label>
+        <input type="text">
+    </div>      
+        <script>
+            function clik(e){
+                let ubah = document.getElementById("teks")
+
+                if(e.value == "hidup"){
+                    ubah.style.display = "block"
+                    document.getElementById("ubah").innerHTML = "Detail ayah"
+                }else if(e.value == "mati"){
+                    ubah.style.display = "block"
+                    document.getElementById("ubah").innerHTML = "Detail kematian ayah"
+                }else{
+                    ubah.style.display = "none"
+                }
+            }
+        </script>
+    
+</body>
+</html>

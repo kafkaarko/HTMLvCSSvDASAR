@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="jenjang_pedidikan"></label>
+    <select name="" id="jenjang_pedidikan" onchange="tingkatSekolah(this)">
+        <option hidden disable selected>pilih</option>
+        <option value="SD">SD</option>
+        <option value="SMP">SMP</option>
+        <option value="SMK/SMA">SMA/SMK</option>
+        <option value="D3">D3</option>
+        <option value="S1">S1</option>
+    </select>
+    <label for="jenjang_pedidikan">tingkat</label>
+    <select name="" id="tingkat_sekolah" >
+        <option hidden disable selected>pilih jenjang</option>
+    </select>
+
+
+    <script>
+        function tingkatSekolah(e){
+            let select = document.getElementById("tingkat_sekolah")
+            if(e.value == "SD"){
+                select.innerHTML = `
+                <option value="1">kelas 1 </option>
+                <option value="2">kelas  2</option>
+                <option value="3">kelas 3 </option>
+                <option value="4">kelas 4 </option>
+                <option value="5">kelas 5 </option>
+                <option value="6">kelas 6 </option>
+                `
+            }else if(e.value == "SMP"){
+                select.innerHTML = `
+                <option value="7">kelas 7 </option>
+                <option value="8">kelas  8</option>
+                <option value="9">kelas 9</option>
+                `
+            }else if(e.value == "SMK/SMA"){
+                select.innerHTML = `
+                <option value="10">kelas 10 </option>
+                <option value="11">kelas 11</option>
+                <option value="12">kelas 12</option>
+                `
+            }else if(e.value == "D3"){
+                select.innerHTML = `
+                <option value="1">kelas 1</option>
+                <option value="2">kelas  2</option>
+                <option value="3">kelas 3</option>
+                <option value="4">kelas 4</option>
+                <option value="5">kelas 5</option>
+                <option value="6">kelas 6</option>
+                `
+            }else{
+                select.innerHTML = `
+                <option value="1">kelas 1</option>
+                <option value="2">kelas  2</option>
+                <option value="3">kelas 3</option>
+                <option value="4">kelas 4</option>
+                <option value="5">kelas 5</option>
+                <option value="6">kelas 6</option>
+                <option value="7">kelas 7</option>
+                <option value="8">kelas 8</option>
+                `
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="ko">
+        <input type="text" id="cari">
+        <button type="submit" onclick="on()">cari</button>
+    </form>
+    <div id="result"></div>
+    <script>
+    
+        function on(){
+            event.preventDefault(); 
+
+            const inputElement = document.getElementById('cari');
+        const resultElement = document.getElementById('result');
+
+            if (inputElement === null) {
+                
+                resultElement.textContent = "Pencarian tidak tersedia";
+            } else {
+                resultElement.textContent = "Data '" + inputElement.value + "' sedang di dicari";
+            }
+
+        }
+        
+    </script>
+</body>

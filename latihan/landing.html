@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrap{
+            display: flex;
+            justify-content: space-between;
+            background-color: antiquewhite;
+            height: 100px;
+        }
+        .logo{
+            display: flex;
+            gap: 1rem;
+        }
+        li{
+            display: inline;
+        }
+        .nav{
+            margin-right: 150px;
+            margin-top: 40px;
+            gap: 3rem;
+        }
+        .dot{
+            display: flex;
+            justify-content: center;
+        }
+        .det{
+            display: flex;
+           gap: 3rem;
+            
+            margin-top: 50px;
+            background-color: antiquewhite;
+        }
+        .kata{width: 50%;}
+        
+    /* From Uiverse.io by alexmaracinaru */ 
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            
+            <div class="logo"><img src="../minggu 1/soal 4/nerd.jpeg" alt="" width="50px" height="50px">
+                <div class="judul"><h2>liburan</h2></div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>Pesan</li>
+                    <li>tentang</li>
+                    <li>reserevarsi</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wraping">
+            <div class="content">
+                <div class="dot">
+                    <div class="det">
+                        <div class="image"><img src="../minggu 1/soal 2/bali.jpeg" alt="" width="50px" height="50px"></div>
+                        <div class="kata">
+                            <h1></h1>bali
+                            <h4>Bali, dikenal juga sebagai Pulau Dewata adalah sebuah provinsi di Indonesia yang terletak pada bagian barat Kepulauan Nusa Tenggara dengan ibu kota di Kota Denpasar</h4>
+                            <p>30,000 views | 1,400 coments</p>
+                            <button class="cta">
+                                <span>Read more</span>
+                                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                  <path d="M1,5 L11,5"></path>
+                                  <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                              </button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="content">
+                <div class="dot">
+                    <div class="det">
+                        <div class="image"><img src="../minggu 1/soal 2/PS.jpg" alt="" width="50px" height="50px"></div>
+                        <div class="kata">
+                            <h1>Pulau seribu</h1>
+                            <h4>Kabupaten Administrasi Kepulauan Seribu atau yang sering di sebut juga Kepulauan Seribu adalah sebuah kabupaten administrasi di Daerah Khusus Ibukota Jakarta, Indonesia. Wilayahnya meliputi gugusan kepulauan di Teluk Jakarta.</h4>
+                            <p>30,000 views | 1,400 coments</p>
+                            <button class="cta">
+                                <span>Read more</span>
+                                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                  <path d="M1,5 L11,5"></path>
+                                  <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                              </button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="content">
+                <div class="dot">
+                    <div class="det">
+                        <div class="image"><img src="../minggu 1/soal 2/RA.jpeg" alt="" width="50px" height="50px"></div>
+                        <div class="kata">
+                            <h1>Raja Ampat</h1>
+                            <h4>Kepulauan Raja Ampat adalah gugusan kepulauan yang berlokasi di barat bagian Semenanjung Kepala Burung Pulau Papua. Secara administrasi, gugusan ini berada di bawah Kabupaten Raja Ampat dan Kota Sorong, Provinsi Papua Barat Daya.</h4>
+                            <p>30,000 views | 1,400 coments</p>
+                            <button class="cta">
+                                <span>Read more</span>
+                                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                  <path d="M1,5 L11,5"></path>
+                                  <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                              </button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+         
+    </main>
+</body>
+</html>
